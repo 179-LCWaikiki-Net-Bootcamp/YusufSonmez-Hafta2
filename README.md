@@ -29,7 +29,7 @@ PUT request ile eklenen tür başlığı "Eski Tür" şeklinde düzenlenmiştir
 GET request ile "Eski Tür" adlı türün başlığına göre arama yapılmıştır.
 
 ![GOMCAM 20220421_1356500943](https://user-images.githubusercontent.com/32747222/164444453-ce040b10-a0fd-4719-ab89-a2b041240850.png)
-Delete request işleminden sonra GET request ile "Eski Tür" adlı türün başlığına göre arama yapılmış ve ürünün silindiği görülmüştür.
+Delete request işlemi ile "Eski Tür" silinmiştir.
 
 ![GOMCAM 20220421_1357070679](https://user-images.githubusercontent.com/32747222/164444580-43a9f96f-d6a3-48dc-8c24-fa7229acefed.png)
 GET request ile idye göre arama yapıldığında türün silindiği görülmüştür.
