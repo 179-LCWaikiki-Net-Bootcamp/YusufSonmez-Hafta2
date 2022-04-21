@@ -3,6 +3,8 @@
 Microsoft.EntityFrameworkCore ve Microsoft.EntityFrameworkCore.InMemory paketlerinin 5.0.6 versiyonları kullanılmıştır.
 Map işlemlerini sağlamak için AutoMapper paketi kullanılmıştır. AutoMapper Dependency injection yöntemiyle uygulanmıştır. Bunun için AutoMapper.Microsoft.DependencyInjection paketi kullanılmıştır.
 
+![GOMCAM 20220421_1342100289](https://user-images.githubusercontent.com/32747222/164445083-820af129-d0fc-46f4-93b8-cfb8d37e1354.png)
+
 Projede Products ve Genres olmak üzere birbirine bağlı iki adet tablo kullanılmıştır. Bu tablolar içerisinde primary key foreign key ilişkisi kurulmuştur.
 
 Projede Entity FrameworkCore InMemory Database kullanılmıştır.
