@@ -13,6 +13,8 @@ Projede ORM ve DTO kullanılmıştır.
 
 Projede Model Validation kullanılmıştır.
 
+# Genres
+
 ![GOMCAM 20220421_1354070873](https://user-images.githubusercontent.com/32747222/164443933-e812c822-7e51-4620-acfa-200fa2c8b1f5.png)
 GET request ile bütün türler listelenmiştir.
 
@@ -34,6 +36,7 @@ Delete request işlemi ile "Eski Tür", idsi aracılığıyla silinmiştir.
 ![GOMCAM 20220421_1357070679](https://user-images.githubusercontent.com/32747222/164444580-43a9f96f-d6a3-48dc-8c24-fa7229acefed.png)
 GET request ile idye göre arama yapıldığında türün silindiği görülmüştür.
 
+# Products
 
 GET request ile bütün ürünler listelenmiştir.
 
