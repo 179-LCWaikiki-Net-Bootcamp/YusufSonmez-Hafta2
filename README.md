@@ -34,7 +34,6 @@ Delete request işlemi ile "Eski Tür", idsi aracılığıyla silinmiştir.
 ![GOMCAM 20220421_1357070679](https://user-images.githubusercontent.com/32747222/164444580-43a9f96f-d6a3-48dc-8c24-fa7229acefed.png)
 GET request ile idye göre arama yapıldığında türün silindiği görülmüştür.
 
-![GOMCAM 20220421_1342100289](https://user-images.githubusercontent.com/32747222/164441650-bdfb472b-6636-41c8-a85d-68bc15bbd624.png)
 
 GET request ile bütün ürünler listelenmiştir.
 
