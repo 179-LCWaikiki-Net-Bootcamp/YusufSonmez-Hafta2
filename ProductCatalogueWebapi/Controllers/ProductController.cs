@@ -117,36 +117,6 @@ namespace ProductCatalogueWebapi.Controllers
                 return BadRequest(ex.Message);
             }
             return Ok();
-            // var product = context.Products.SingleOrDefault(x=>x.Id == id);
-            // // Eger degistirilmek istenen title zaten var mı diye kontrol etmek icin eklendi.
-            // var checkIfTitleExist = context.Products.SingleOrDefault(x=>x.Title == updateProduct.Title);
-
-            // // Öyle bir id'ye sahip bir ürün var ise günceller ve Ok() fonksiyonu ile bunu bildirir, yok ise BadRequest() ile hata mesajı döner.
-            // if(product is null)
-            // {
-            //     return NotFound("Ürün id'si bulunamadı!");
-            // }
-            
-            // if(ModelState.IsValid)
-            //     {
-            //     if(checkIfTitleExist is null)
-            //     // Bir ürün başka bir ürün adına sahip olacak şekilde degiştirilirse "Ürün stokta mevcut!" hatasını döner. Aksi takdirde güncellemeyi yapacaktır.
-            //         {
-            //             product.GenreId = updateProduct.GenreId != default ? updateProduct.GenreId : product.GenreId;
-            //             product.Title = updateProduct.Title != default ? updateProduct.Title : product.Title;
-            //             product.Price = updateProduct.Price != default ? updateProduct.Price : product.Price;
-            //             context.SaveChanges();
-            //             return Ok("Ürün başarıyla güncellendi!");
-            //         }
-            //     else
-            //         {
-            //             return BadRequest("Ürün stokta mevcut!");
-            //         }
-            //     }
-            // else
-            //     {
-            //     return BadRequest("Model dogrulaması hatalı");
-            //     }
         }
 
         // DELETE /Products/{id}
