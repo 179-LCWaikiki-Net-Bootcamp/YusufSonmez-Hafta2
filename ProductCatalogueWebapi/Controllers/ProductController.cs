@@ -88,7 +88,7 @@ namespace ProductCatalogueWebapi.Controllers
                 // {
                     command.Model = newProduct;
                     command.Handle();
-                    return Ok("Ürün eklendi");
+                    return Ok();
                 // }
                 // catch(Exception ex)
                 // {

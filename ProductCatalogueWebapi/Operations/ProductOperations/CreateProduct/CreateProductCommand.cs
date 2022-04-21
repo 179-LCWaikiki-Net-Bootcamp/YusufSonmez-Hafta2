@@ -25,13 +25,6 @@ namespace ProductCatalogueWebapi.Operations.ProductOperations.CreateProduct
         {
             var product = _dbContext.Products.SingleOrDefault(x=>x.Title == Model.Title);
 
-            // var genreId = _dbContext.Products.SingleOrDefault(x=>x.GenreId == Model.GenreId);
-            // Console.WriteLine(genreId);
-            // if(genreId.GenreId < 1 && genreId.GenreId > 3)
-            // {
-            //     throw new InvalidOperationException("Geçersiz genre id!"); 
-            // }
-            // Ürün stokta mevcut degilse girilmişse(required) kaydet ve Ok("Ürün başarıyla eklendi!") mesajı dön.
             if(product is not null)
             {
                 throw new InvalidOperationException("Ürün stokta mevcut!"); 

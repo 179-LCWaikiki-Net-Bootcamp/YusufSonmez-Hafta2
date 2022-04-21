@@ -28,7 +28,6 @@ namespace ProductCatalogueWebapi.Operations.GenreOperations.CreateGenre
             // Tür mevcut degilse girilmişse(required) kaydet ve Ok("Tür başarıyla eklendi!") mesajı dön.
             if(genre is not null)
             {
-            //    return BadRequest("Tür mevcut!");
             throw new InvalidOperationException("Tür mevcut!"); 
             }
             genre = _mapper.Map<Genre>(Model); 

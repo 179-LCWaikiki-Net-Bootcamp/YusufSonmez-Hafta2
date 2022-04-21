@@ -87,7 +87,7 @@ namespace ProductCatalogueWebapi.Controllers
                 {
                     command.Model = newGenre;
                     command.Handle();
-                    return Ok("Tür başarıyla eklendi!");
+                    return Ok();
 
                 }
                 catch(Exception ex)
@@ -98,7 +98,7 @@ namespace ProductCatalogueWebapi.Controllers
             
             else
             {
-                return BadRequest("Model is not valid!");
+                return BadRequest("Uygun olmayan bir model girdiniz!");
             }
         }
         

@@ -23,17 +23,9 @@ namespace ProductCatalogueWebapi.Operations.ProductOperations.GetProducts
 
         public List<ProductViewModel> Handle()
         {
-            // var productList = _dbContext.Products.OrderBy(x=>x.Id).ToList<Product>();
             var productList = _dbContext.Products.Include(x=>x.Genre).OrderBy(x=>x.Id).ToList<Product>();
-            List<ProductViewModel> vm = _mapper.Map<List<ProductViewModel>>(productList);//new List<ProductViewModel>();
-            // foreach(var product in productList)
-            // {
-            //     vm.Add(new ProductViewModel(){
-            //         Title = product.Title,
-            //         Price = product.Price,
-            //         Genre = ((GenreEnum)product.GenreId).ToString()
-            //     });
-            // }
+            List<ProductViewModel> vm = _mapper.Map<List<ProductViewModel>>(productList);
+            
             return vm; 
         }
     }

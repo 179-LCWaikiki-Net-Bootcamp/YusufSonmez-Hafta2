@@ -29,11 +29,7 @@ namespace ProductCatalogueWebapi.Operations.ProductOperations.GetProductDetail
             {
                 throw new InvalidOperationException("Ürün bulunamadı");
             }
-            ProductDetailViewModel vm = _mapper.Map<ProductDetailViewModel>(product); //new ProductDetailViewModel();
-
-            // vm.Title = product.Title;
-            // vm.Genre = ((GenreEnum)product.GenreId).ToString();
-            // vm.Price = product.Price;
+            ProductDetailViewModel vm = _mapper.Map<ProductDetailViewModel>(product); 
             
             return vm;
         }
