@@ -135,19 +135,6 @@ namespace ProductCatalogueWebapi.Controllers
                 return BadRequest(ex.Message);
             }
             return Ok();
-            // var product = context.Products.SingleOrDefault(x=>x.Id == id);
-            
-            // // Öyle bir id'ye sahip bir ürün yoksa BadRequest() fonksiyonu ile hata döner, varsa ürünü siler ve Ok() fonksiyonu ile bunu bildirir.
-            // if(product is null)
-            // {
-            //     return NotFound("Ürün id'si bulunamadı!");
-            // }
-            // else
-            // {
-            //     context.Products.Remove(product);
-            //     context.SaveChanges();
-            // }
-            // return Ok("Ürün başarıyla silindi!");
         }
     }
 }
