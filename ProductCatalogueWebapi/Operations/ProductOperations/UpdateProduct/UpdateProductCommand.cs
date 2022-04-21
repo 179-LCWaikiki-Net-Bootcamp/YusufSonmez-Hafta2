@@ -35,7 +35,7 @@ namespace ProductCatalogueWebapi.Operations.ProductOperations.UpdateProduct
                 // Bir ürün başka bir ürün adına sahip olacak şekilde degiştirilirse "Ürün stokta mevcut!" hatasını döner. Aksi takdirde güncellemeyi yapacaktır.
                     {
                         product.Title = Model.Title != default ? Model.Title : product.Title;
-                        product.Price = Model.Price != default ? Model.Price : product.Price;
+                        product.Price = Model.Price;
                         _context.SaveChanges();
                         // return Ok("Ürün başarıyla güncellendi!");
                         System.Console.WriteLine("Ürün başarıyla güncellendi!");

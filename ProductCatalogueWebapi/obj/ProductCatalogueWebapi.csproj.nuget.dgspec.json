@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\programlar\\YusufSonmez-Hafta2\\ProductCatalogueWebapi\\ProductCatalogueWebapi.csproj": {}
+    "D:\\programlar\\odvv\\YusufSonmez-Hafta2\\ProductCatalogueWebapi\\ProductCatalogueWebapi.csproj": {}
   },
   "projects": {
-    "D:\\programlar\\YusufSonmez-Hafta2\\ProductCatalogueWebapi\\ProductCatalogueWebapi.csproj": {
+    "D:\\programlar\\odvv\\YusufSonmez-Hafta2\\ProductCatalogueWebapi\\ProductCatalogueWebapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programlar\\YusufSonmez-Hafta2\\ProductCatalogueWebapi\\ProductCatalogueWebapi.csproj",
+        "projectUniqueName": "D:\\programlar\\odvv\\YusufSonmez-Hafta2\\ProductCatalogueWebapi\\ProductCatalogueWebapi.csproj",
         "projectName": "ProductCatalogueWebapi",
-        "projectPath": "D:\\programlar\\YusufSonmez-Hafta2\\ProductCatalogueWebapi\\ProductCatalogueWebapi.csproj",
+        "projectPath": "D:\\programlar\\odvv\\YusufSonmez-Hafta2\\ProductCatalogueWebapi\\ProductCatalogueWebapi.csproj",
         "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "D:\\programlar\\YusufSonmez-Hafta2\\ProductCatalogueWebapi\\obj\\",
+        "outputPath": "D:\\programlar\\odvv\\YusufSonmez-Hafta2\\ProductCatalogueWebapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,12 +1,7 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ProductCatalogueWebapi.Common;
 
 namespace ProductCatalogueWebapi.Operations.ProductOperations.GetProductDetail
 {
@@ -25,17 +20,11 @@ namespace ProductCatalogueWebapi.Operations.ProductOperations.GetProductDetail
         {
             var product = _dbContext.Products.Include(x=>x.Genre).Where(x=>x.Title == Title).SingleOrDefault();
 
-            ProductDetailViewModelByTitle vm = _mapper.Map<ProductDetailViewModelByTitle>(product); // new ProductDetailViewModelByTitle();
+            ProductDetailViewModelByTitle vm = _mapper.Map<ProductDetailViewModelByTitle>(product);
             if(product is null)
             {
                 throw new InvalidOperationException("Ürün bulunamadı");
-            }
-            
-
-            // vm.Title = product.Title;
-            // vm.Genre = ((GenreEnum)product.GenreId).ToString();
-            // vm.Price = product.Price;
-            
+            }            
             return vm;
         }
     }

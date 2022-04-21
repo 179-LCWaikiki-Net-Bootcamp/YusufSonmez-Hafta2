@@ -60,7 +60,7 @@ namespace ProductCatalogueWebapi.Controllers
 
         // // GET /Genres/Search
         [HttpGet("Search")]
-        public ActionResult<IEnumerable<Genre>> Search(string search)
+        public ActionResult<IEnumerable<Genre>> Search([FromQuery] string search)
         {
             GenreDetailViewModelByTitle result;
             try
@@ -81,26 +81,27 @@ namespace ProductCatalogueWebapi.Controllers
         public IActionResult AddProduct([FromBody] CreateGenreModel newGenre)
         {
             CreateGenreCommand command = new CreateGenreCommand(context, _mapper);
-            
+            if(ModelState.IsValid)
+            {
                 try
                 {
-                    if(ModelState.IsValid) // çalışmıyor buraya dön
-                    {
                     command.Model = newGenre;
                     command.Handle();
-                    }
-                    else
-                    {
-                        return BadRequest("Model is not valid!");
-                    }
+                    return Ok("Tür başarıyla eklendi!");
+
                 }
                 catch(Exception ex)
                 {
                     return BadRequest(ex.Message);
                 }
+            }
             
-            return Ok("Tür başarıyla eklendi!");
+            else
+            {
+                return BadRequest("Model is not valid!");
+            }
         }
+        
         // PUT /Genres/{id}
         [HttpPut("{id}")]
         public IActionResult UpdateGenre(int id,[FromBody] UpdateGenreModel updateGenre)

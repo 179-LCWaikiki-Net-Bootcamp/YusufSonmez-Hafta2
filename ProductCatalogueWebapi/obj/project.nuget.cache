@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZjG8TF1bYrn7KoLVR3OJNuuTrwCpal0K+CWCGCg8o20Z+5LSjQYoNgDY+afHX857R3E1n9zpv5VMqmbFRnCreQ==",
+  "dgSpecHash": "KKXTzmzwDw54WGc0vfZnnYcuP1fe8aEOEA0+V5WaP1ux/VOOeceMh/qVu4O6kzX4HvoOWj4ZMV1kMk0QhFuQSA==",
   "success": true,
-  "projectFilePath": "D:\\programlar\\YusufSonmez-Hafta2\\ProductCatalogueWebapi\\ProductCatalogueWebapi.csproj",
+  "projectFilePath": "D:\\programlar\\odvv\\YusufSonmez-Hafta2\\ProductCatalogueWebapi\\ProductCatalogueWebapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yusuf\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

@@ -60,7 +60,7 @@ namespace ProductCatalogueWebapi.Controllers
 
         // GET /Products/Search
         [HttpGet("Search")]
-        public ActionResult<IEnumerable<Product>> Search(string search)
+        public ActionResult<IEnumerable<Product>> Search([FromQuery] string search)
         {
             ProductDetailViewModelByTitle result;
             try
@@ -82,43 +82,25 @@ namespace ProductCatalogueWebapi.Controllers
         {
             CreateProductCommand command = new CreateProductCommand(context, _mapper);
             
-                try
-                {
-                    if(ModelState.IsValid) // çalışmıyor buraya dön
-                    {
+            if(ModelState.IsValid)
+            {
+                // try
+                // {
                     command.Model = newProduct;
                     command.Handle();
-                    }
-                    else
-                    {
-                        return BadRequest("Model is not valid!");
-                    }
-                }
-                catch(Exception ex)
-                {
-                    return BadRequest(ex.Message);
-                }
-                
-            
-            
-
-            // var product = context.Products.SingleOrDefault(x=>x.Title == newProduct.Title);
-
-            // // Ürün stokta mevcut degilse girilmişse(required) kaydet ve Ok("Ürün başarıyla eklendi!") mesajı dön.
-            // if(product is not null)
-            // {
-            //    return BadRequest("Ürün stokta mevcut!"); 
-            // }
-
-            // if(ModelState.IsValid)
-            // {
-            //     context.Products.Add(newProduct);
-            //     context.SaveChanges();
-            // }
-                   
-            
-            return Ok("Ürün başarıyla eklendi!");
+                    return Ok("Ürün eklendi");
+                // }
+                // catch(Exception ex)
+                // {
+                //     return BadRequest(ex.Message);
+                // }
+            }
+            else
+            {
+                return BadRequest("Uygun olmayan bir model girdiniz!");
+            }
         }
+        
         // PUT /Products/{id}
         [HttpPut("{id}")]
         public IActionResult UpdateProduct(int id,[FromBody] UpdateProductModel updateProduct)
